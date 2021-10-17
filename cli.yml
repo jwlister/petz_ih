@@ -1,0 +1,19 @@
+name: petz_ih
+version: "0.1.0"
+author: Jeremiah Lister <jwlister@protonmail.com>
+about: Converts images to PNG and makes all white pixels transparent
+args:
+    - no-pause:
+        short: n
+        long: no-pause
+        help: Exit immediately after finishing, not requiring the user to press enter
+    - output:
+        short: o
+        long: output
+        value_name: DIR
+        help: Sets a custom output directory
+        takes_value: true
+    - PATH:
+        help: Paths of the image files to process (and/or of directories containing them)
+        multiple: true
+        required: true
